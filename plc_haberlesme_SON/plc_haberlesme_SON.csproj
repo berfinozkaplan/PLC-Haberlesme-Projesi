@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F254ED04-BCC2-4856-90C0-959108AB1E61}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>plc_haberlesme_SON</RootNamespace>
+    <AssemblyName>plc_haberlesme_SON</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <PreferNativeArm64>false</PreferNativeArm64>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anasayfacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfacs.Designer.cs">
+      <DependentUpon>anasayfacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cryptology.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ipadres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ipadres.Designer.cs">
+      <DependentUpon>ipadres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="offsetsayi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="offsetsayi.Designer.cs">
+      <DependentUpon>offsetsayi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="dkodgonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenisifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenisifre.Designer.cs">
+      <DependentUpon>yenisifre.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anasayfacs.resx">
+      <DependentUpon>anasayfacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dkodgonder.resx">
+      <DependentUpon>dkodgonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ipadres.resx">
+      <DependentUpon>ipadres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="offsetsayi.resx">
+      <DependentUpon>offsetsayi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="yenisifre.resx">
+      <DependentUpon>yenisifre.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-user-computer-icons-user-miscellaneous-cdr-rectangle-thumbnail-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-76-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\142555871.png" />
+    <None Include="Resources\14255587.png" />
+    <None Include="Resources\10939866.png" />
+    <None Include="Resources\images-removebg-preview.png" />
+    <None Include="Resources\pngtree-packing-machine-and-logistics-png-image_12646454-removebg-preview.png" />
+    <None Include="Resources\pngtree-automatic-packaging-machine-with-conveyor-belt-png-image_16321134-removebg-preview.png" />
+    <None Include="Resources\png-transparent-factory-conveyor-system-conveyor-belt-logistics-packaging-and-labeling-industry-machine-assembly-line-thumbnail-removebg-preview.png" />
+    <None Include="Resources\3439971-removebg-preview.png" />
+    <None Include="Resources\ip-address-icon-for-your-website-design-logo-app-ui-free-vector-removebg-preview.png" />
+    <None Include="Resources\Mavi Minimalist Motivasyon Instagram Gönderisi .png" />
+    <None Include="Resources\xxx-removebg-preview.png" />
+    <None Include="Resources\Adsız_tasarım-removebg-preview.png" />
+    <None Include="Resources\Adsız_tasarım-removebg-preview1.png" />
+    <None Include="Resources\pngtree-automated-packaging-machine-on-conveyor-belt-flat-vector-png-image_16465014.png" />
+    <None Include="Resources\Adsız_tasarım-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adsız tasarım.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White and Black Modern Construction Company Promotion Instagram Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girisform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_35717211-stock-illustration-vector-user-icon-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-password-manager-computer-icons-password-strength-password-safe-chang-miscellaneous-password-strength-password-safe-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-icon-symbol-design-illustration-vector-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snapedit_1751610357069-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-user-check-mark-name-tag-miscellaneous-text-sign-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adsız tasarım1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanıcıgirisiform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şifremi unuttum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\şifremi unuttumBUYUK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeni şifre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeni şifre1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anasayfa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anasayfaBUYUK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-packing-machine-and-logistics-png-image_12646454-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offsetruefalse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offsettrue.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
